@@ -201,7 +201,6 @@ best_players AS(
                                 GROUP BY player_api_id)
         AND overall_rating IS NOT NULL
     ORDER BY overall_rating DESC
-    --LIMIT 34
 ),
 player_id_filtered AS(
 -- Query que realiza un INNER JOIN para poder identificar en que equipos se encuentra cada jugador gracias a la funcion LIKE y la concatenacion en el Query *team_players_id*
